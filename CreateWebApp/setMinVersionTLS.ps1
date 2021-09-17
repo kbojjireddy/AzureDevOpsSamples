@@ -7,7 +7,8 @@ param(
 $ErrorActionPreference = 'Stop'
 $DeploymentScriptOutputs = @{}                               
 $output = 'Setting the MinimumTlsVersion to : {0} on the Storage Account : {1} located in the Resource Group : {2} subscriptionId:{3}' -f $MinimumTlsVersion,$saName,$saResourceGroupName, $subscriptionId 
-Set-AzContext -SubscriptionId $subscriptionId
+#Set-AzContext -SubscriptionId $subscriptionId
+Set-AzContext -Subscription "Metallic Sandbox - SRE"
 $context=Get-AzContext
 $output = $output + $context.Name
 $DeploymentScriptOutputs['action1'] = $output
