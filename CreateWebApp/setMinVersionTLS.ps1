@@ -10,4 +10,4 @@ $output = 'Setting the MinimumTlsVersion to : {0} on the Storage Account : {1} l
 $DeploymentScriptOutputs['action1'] = $output
 #Set-AzContext -Subscription $subscriptionId
 #Set-AzStorageAccount -ResourceGroupName $saResourceGroupName -AccountName $saName -MinimumTlsVersion $minimumTlsVersion
-$DeploymentScriptOutputs['end'] = 'End of the operation'
+$DeploymentScriptOutputs['end'] = 'End of the operation 1'
