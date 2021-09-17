@@ -1,7 +1,8 @@
 param(
   [string] [Parameter(Mandatory = $true)] $saName,
   [string] [Parameter(Mandatory = $true)] $saResourceGroupName,
-  [string] [Parameter(Mandatory = $true)] $minimumTlsVersion
+  [string] [Parameter(Mandatory = $true)] $minimumTlsVersion,
+  [string] [Parameter(Mandatory = $true)] $saResourceGroupId
 )      
 $ErrorActionPreference = 'Stop'
 $DeploymentScriptOutputs = @{}                               
